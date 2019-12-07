@@ -1,0 +1,49 @@
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.jumbo-image {
+    background-image: url("../images/mercury.jpg");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.jumbo-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.500);
+}
+
+.input {
+    margin-bottom: 20px;
+    width: 400px;
+    text-align: center;
+    margin: auto;
+}
+
+.table-case {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin: auto;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+#table-case th {
+    text-align: center;
+}
+
+#table-case tbody {
+    text-align: center;
+}

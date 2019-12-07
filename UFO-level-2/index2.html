@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>KFO Findings</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+</head>
+
+<body>
+    <div>
+        <div class="jumbotron jumbo-image">
+            <div class="container jumbo-text">
+                <h1>Hello, Terrestrians!</h1>
+                <h2>In this web site you will be able to find out when and where I have visited you.</h2>
+                <h3>Just insert the date you want. To find out information about my visit.</h3>
+                <div class="input-group-md input">
+                    <input type="text" class="form-control" placeholder="Filter by date. Ex: 1/1/2010" aria-describedby="basic-addon1" id="data-filter">
+                    <input type="text" class="form-control" placeholder="Filter by city. Ex: el cajon" aria-describedby="basic-addon2" id="city-filter">
+                    <input type="text" class="form-control" placeholder="Filter by state. Ex: ca" aria-describedby="basic-addon3" id="state-filter">
+                    <input type="text" class="form-control" placeholder="Filter by shape. Ex: triangle" aria-describedby="basic-addon4" id="shape-filter">
+                </div class="button">
+                <p><a id="button" class="btn btn-primary btn-lg" href="#" role="button">Find out!</a></p>
+            </div>
+        </div>
+        <div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="msg-box">
+                        <p></p>
+                    </div>
+                    <div id="table-case" class="table-case">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th class="table-head">Date</th>
+                                    <th class="table-head">City</th>
+                                    <th class="table-head">State</th>
+                                    <th class="table-head">Country</th>
+                                    <th class="table-head">Shape</th>
+                                    <th class="table-head">Duration</th>
+                                    <th class="table-head">Comments</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!--area destined to acommodate the information filtered-->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <script src="static/js/data.js"></script>
+    <script src="static/js/app2.js"></script>
+</body>
+
+</html>
